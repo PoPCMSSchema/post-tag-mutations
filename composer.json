@@ -136,7 +136,6 @@
         "pop-wp-schema/site": "<4.2.0",
         "pop-wp-schema/menus": "<4.2.0",
         "pop-wp-schema/block-content-parser": "<4.2.0",
-        "pop-wp-schema/multisite": "<4.2.0",
         "pop-wp-schema/pages": "<4.2.0",
         "pop-wp-schema/custompostmeta": "<4.2.0",
         "pop-wp-schema/media": "<4.2.0"
@@ -155,10 +154,10 @@
     ],
     "require": {
         "php": "^8.1",
-        "pop-cms-schema/custompost-tag-mutations": "^4.2",
-        "pop-cms-schema/post-mutations": "^4.2",
-        "pop-cms-schema/post-tags": "^4.2",
-        "pop-cms-schema/tag-mutations": "^4.2"
+        "pop-cms-schema/custompost-tag-mutations": "^4.3",
+        "pop-cms-schema/post-mutations": "^4.3",
+        "pop-cms-schema/post-tags": "^4.3",
+        "pop-cms-schema/tag-mutations": "^4.3"
     },
     "require-dev": {
         "phpstan/phpstan": "^1.8",
@@ -184,7 +183,7 @@
     },
     "extra": {
         "branch-alias": {
-            "dev-master": "4.2-dev"
+            "dev-master": "4.3-dev"
         }
     },
     "config": {
