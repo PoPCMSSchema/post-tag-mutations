@@ -5,11 +5,10 @@ declare(strict_types=1);
 namespace PoPCMSSchema\PostTagMutations\ObjectTypeResolverPickers;
 
 use PoPCMSSchema\PostTagMutations\TypeResolvers\UnionType\AbstractPostTagsMutationErrorPayloadUnionTypeResolver;
-use PoPCMSSchema\PostTagMutations\TypeResolvers\UnionType\AbstractPostTagMutationErrorPayloadUnionTypeResolver;
-use PoPCMSSchema\UserStateMutations\ObjectTypeResolverPickers\AbstractUserIsNotLoggedInErrorPayloadObjectTypeResolverPicker;
+use PoPCMSSchema\CustomPostMutations\ObjectTypeResolverPickers\AbstractLoggedInUserHasNoPermissionToEditCustomPostErrorPayloadObjectTypeResolverPicker;
 use PoP\ComponentModel\TypeResolvers\UnionType\UnionTypeResolverInterface;
 
-class UserIsNotLoggedInMutationErrorPayloadObjectTypeResolverPicker extends AbstractUserIsNotLoggedInErrorPayloadObjectTypeResolverPicker
+class LoggedInUserHasNoPermissionToEditCustomPostErrorPayloadObjectTypeResolverPicker extends AbstractLoggedInUserHasNoPermissionToEditCustomPostErrorPayloadObjectTypeResolverPicker
 {
     /**
      * @return array<class-string<UnionTypeResolverInterface>>
@@ -18,7 +17,6 @@ class UserIsNotLoggedInMutationErrorPayloadObjectTypeResolverPicker extends Abst
     {
         return [
             AbstractPostTagsMutationErrorPayloadUnionTypeResolver::class,
-            AbstractPostTagMutationErrorPayloadUnionTypeResolver::class,
         ];
     }
 }
